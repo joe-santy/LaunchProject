@@ -36,7 +36,7 @@ inquirer.prompt([
           console.log("Project initiating.");
           let deps = answer.dependencies.split(' ');
           deps.forEach(function(dep){
-            cp.exec("npm install " + dep, console.log(dep + " installed."));
+            cp.exec("npm install " + dep, console.log(dep + " installing."));
           });
           (function copyBootstrapTemplate(type){
             if (type == "album" || null){
